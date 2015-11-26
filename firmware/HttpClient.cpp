@@ -184,9 +184,9 @@ void HttpClient::request(http_request_t &aRequest, http_response_t &aResponse, h
         #ifdef LOGGING
         int bytes = client.available();
         if(bytes) {
-            Serial.print("\r\n>\tReceiving TCP transaction of ");
+            Serial.print(">\tReceiving TCP transaction of ");
             Serial.print(bytes);
-            Serial.println(" bytes.");
+            Serial.println(" bytes.\r\n");
         }
         #endif
 
