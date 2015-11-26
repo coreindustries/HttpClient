@@ -103,7 +103,7 @@ void HttpClient::request(http_request_t &aRequest, http_response_t &aResponse, h
     client.print(" HTTP/1.0\r\n");
 
     #ifdef LOGGING
-    Serial.println(">\tStart of HTTP Request.");
+    Serial.println(">\tStart of HTTP Request.\r\n");
     Serial.print(aHttpMethod);
     Serial.print(" ");
     Serial.print(aRequest.path);
