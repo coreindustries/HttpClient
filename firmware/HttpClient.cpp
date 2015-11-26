@@ -111,7 +111,7 @@ void HttpClient::request(http_request_t &aRequest, http_response_t &aResponse, h
     #endif
 
     // Send General and Request Headers.
-    sendHeader("Connection", "close"); // Not supporting keep-alive for now.
+    // sendHeader("Connection", "close"); // Not supporting keep-alive for now.
     if(aRequest.hostname!=NULL) {
         sendHeader("Host", aRequest.hostname.c_str());
     }
