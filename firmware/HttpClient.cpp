@@ -104,12 +104,12 @@ void HttpClient::request(http_request_t &aRequest, http_response_t &aResponse, h
 
     #ifdef LOGGING
     Serial.println(">\tStart of HTTP Request.\r\n");
-    Serial.println('\033[93m'); // YELLOW
+    Serial.println("\033[93m"); // YELLOW
     Serial.print(aHttpMethod);
     Serial.print(" ");
     Serial.print(aRequest.path);
     Serial.print(" HTTP/1.0\r\n");
-    Serial.println('\033[0m'); // END COLOR
+    Serial.println("\033[0m"); // END COLOR
     #endif
 
     // Send General and Request Headers.
@@ -153,10 +153,10 @@ void HttpClient::request(http_request_t &aRequest, http_response_t &aResponse, h
         client.println(aRequest.body);
 
         #ifdef LOGGING
-        Serial.println('\033[96m'); // CYAN
+        Serial.println("\033[96m"); // CYAN
         Serial.println(aRequest.body);
         Serial.println("");
-        Serial.println('\033[0m'); // END COLOR
+        Serial.println("\033[0m"); // END COLOR
         #endif
     }
 
